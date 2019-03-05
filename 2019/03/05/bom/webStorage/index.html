@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="leo zhu">
 <meta property="og:description" content="¶ 作用 Web storage API使页面可以将一些数据保存在客户端。 ¶ 种类  sessionStorage localStorage  ¶ sessionStorage和localStorage的区别 ¶ sessionStorage 当前页面刷新、恢复（通过浏览器的‘恢复上次关闭的页面’,不是手动重新打开）时，被保存的数据仍然保留; 关闭浏览器窗口时，数据清空。 ¶ localStor">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-05T14:53:01.933Z">
+<meta property="og:updated_time" content="2019-03-05T14:58:24.229Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Web Storage API">
 <meta name="twitter:description" content="¶ 作用 Web storage API使页面可以将一些数据保存在客户端。 ¶ 种类  sessionStorage localStorage  ¶ sessionStorage和localStorage的区别 ¶ sessionStorage 当前页面刷新、恢复（通过浏览器的‘恢复上次关闭的页面’,不是手动重新打开）时，被保存的数据仍然保留; 关闭浏览器窗口时，数据清空。 ¶ localStor">
@@ -331,7 +331,7 @@
                 
               
 
-              <time title="创建时间：2019-03-05 21:50:32 / 修改时间：22:53:01" itemprop="dateCreated datePublished" datetime="2019-03-05T21:50:32+08:00">2019-03-05</time>
+              <time title="创建时间：2019-03-05 21:50:32 / 修改时间：22:58:24" itemprop="dateCreated datePublished" datetime="2019-03-05T21:50:32+08:00">2019-03-05</time>
             
 
             
@@ -413,6 +413,9 @@
 <p><a href="http://111.11.11:8080/b.html" target="_blank" rel="noopener">http://111.11.11:8080/b.html</a></p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.addEventListener(<span class="string">'storage'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 <p>同时打开 同源的 a,b两个页面，a页面内设置localStorage,b页面内会出发storage事件。</p>
+<blockquote>
+<p>但是我通过测试，发现sessionStorage并不会触发这个事件</p>
+</blockquote>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css">
       
     </div>
