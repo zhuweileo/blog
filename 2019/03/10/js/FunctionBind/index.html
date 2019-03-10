@@ -108,25 +108,25 @@
 
 
 
-  <meta name="description" content="¶ 复制粘贴和寄存器 ¶ 无名寄存器(&amp;quot;&amp;quot;) 两个双引号，Vim中叫做无名寄存器。x,s,d,c,y等操作，如果不指定寄存器，都是将临时内容放到这个寄存器中，也就是相当于一个默认寄存器。 可以通过 :reg 来查看当前寄存器的值，操作一下，然后查寄存器内容，就明白了。 例如： 复制当前行(yy)，并粘贴§。 这里y命令会将当前行内容放入寄存器&amp;quot;&amp;quot;，按p时，会">
-<meta name="keywords" content="vim">
+  <meta name="description" content="简易实现 123456789Function.prototype.bind = function(context)&amp;#123;  var args = Array.prototype.slice.call(arguments, 1),  self = this;  return function()&amp;#123;      var innerArgs = Array.prototype.slice.">
+<meta name="keywords" content="js,前端">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vim复制粘贴与寄存器">
-<meta property="og:url" content="https://zhuweileo.github.io/blog/2018/06/12/vim复制粘贴与寄存器/index.html">
+<meta property="og:title" content="Function.prototype.bind的实现">
+<meta property="og:url" content="https://zhuweileo.github.io/blog/2019/03/10/js/FunctionBind/index.html">
 <meta property="og:site_name" content="leo zhu">
-<meta property="og:description" content="¶ 复制粘贴和寄存器 ¶ 无名寄存器(&amp;quot;&amp;quot;) 两个双引号，Vim中叫做无名寄存器。x,s,d,c,y等操作，如果不指定寄存器，都是将临时内容放到这个寄存器中，也就是相当于一个默认寄存器。 可以通过 :reg 来查看当前寄存器的值，操作一下，然后查寄存器内容，就明白了。 例如： 复制当前行(yy)，并粘贴§。 这里y命令会将当前行内容放入寄存器&amp;quot;&amp;quot;，按p时，会">
+<meta property="og:description" content="简易实现 123456789Function.prototype.bind = function(context)&amp;#123;  var args = Array.prototype.slice.call(arguments, 1),  self = this;  return function()&amp;#123;      var innerArgs = Array.prototype.slice.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-05T12:33:01.961Z">
+<meta property="og:updated_time" content="2019-03-10T09:41:15.838Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vim复制粘贴与寄存器">
-<meta name="twitter:description" content="¶ 复制粘贴和寄存器 ¶ 无名寄存器(&amp;quot;&amp;quot;) 两个双引号，Vim中叫做无名寄存器。x,s,d,c,y等操作，如果不指定寄存器，都是将临时内容放到这个寄存器中，也就是相当于一个默认寄存器。 可以通过 :reg 来查看当前寄存器的值，操作一下，然后查寄存器内容，就明白了。 例如： 复制当前行(yy)，并粘贴§。 这里y命令会将当前行内容放入寄存器&amp;quot;&amp;quot;，按p时，会">
+<meta name="twitter:title" content="Function.prototype.bind的实现">
+<meta name="twitter:description" content="简易实现 123456789Function.prototype.bind = function(context)&amp;#123;  var args = Array.prototype.slice.call(arguments, 1),  self = this;  return function()&amp;#123;      var innerArgs = Array.prototype.slice.">
 
 
 
 
 
 
-  <link rel="canonical" href="https://zhuweileo.github.io/blog/2018/06/12/vim复制粘贴与寄存器/"/>
+  <link rel="canonical" href="https://zhuweileo.github.io/blog/2019/03/10/js/FunctionBind/"/>
 
 
 
@@ -136,7 +136,7 @@
   };
 </script>
 
-  <title>vim复制粘贴与寄存器 | leo zhu</title>
+  <title>Function.prototype.bind的实现 | leo zhu</title>
   
 
 
@@ -289,7 +289,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhuweileo.github.io/blog/blog/2018/06/12/vim复制粘贴与寄存器/">
+    <link itemprop="mainEntityOfPage" href="https://zhuweileo.github.io/blog/blog/2019/03/10/js/FunctionBind/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="朱维">
@@ -306,7 +306,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">vim复制粘贴与寄存器
+          <h1 class="post-title" itemprop="name headline">Function.prototype.bind的实现
               
             
           </h1>
@@ -331,24 +331,12 @@
                 
               
 
-              <time title="创建时间：2018-06-12 17:28:24" itemprop="dateCreated datePublished" datetime="2018-06-12T17:28:24+08:00">2018-06-12</time>
+              <time title="创建时间：2019-03-10 17:33:59 / 修改时间：17:41:15" itemprop="dateCreated datePublished" datetime="2019-03-10T17:33:59+08:00">2019-03-10</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-03-05 20:33:01" itemprop="dateModified" datetime="2019-03-05T20:33:01+08:00">2019-03-05</time>
               
             
           </span>
@@ -389,41 +377,12 @@
       
 
       
-        <h1 id="复制粘贴和寄存器"><a class="header-anchor" href="#复制粘贴和寄存器" aria-hidden="true">¶</a> 复制粘贴和寄存器</h1>
-<h3 id="无名寄存器(&quot;&quot;)"><a class="header-anchor" href="#无名寄存器(&quot;&quot;)" aria-hidden="true">¶</a> 无名寄存器(&quot;&quot;)</h3>
-<p>两个双引号，Vim中叫做无名寄存器。x,s,d,c,y等操作，如果不指定寄存器，都是将临时内容放到这个寄存器中，也就是相当于一个默认寄存器。<br>
-可以通过 :reg 来查看当前寄存器的值，操作一下，然后查寄存器内容，就明白了。<br>
-例如：<br>
-复制当前行(yy)，并粘贴§。<br>
-这里y命令会将当前行内容放入寄存器&quot;&quot;，按p时，会到寄存器&quot;&quot;中取内容。</p>
-<h3 id="复制专用寄存器(&quot;0)"><a class="header-anchor" href="#复制专用寄存器(&quot;0)" aria-hidden="true">¶</a> 复制专用寄存器(&quot;0)</h3>
-<p>通过y命令复制的内容，会保存到寄存器0中。<br>
-寄存器的使用是通过&quot;后面跟寄存器名字。<br>
-例如：<br>
-复制当前行(yy)，<br>
-又做了几次删除单词操作(dw)<br>
-但是只想粘贴刚才复制的行，那么就不能用无名寄存器&quot;&quot;去粘贴了，不能直接p进行粘贴，需要用&quot;0p，指定使用寄存器0，因为&quot;0里只存放y命令存入的内容。</p>
-<h3 id="删除专用寄存器(&quot;1-&quot;9)"><a class="header-anchor" href="#删除专用寄存器(&quot;1-&quot;9)" aria-hidden="true">¶</a> 删除专用寄存器(&quot;1-&quot;9)</h3>
-<p>通过d或c命令，删掉的内容，会保存打&quot;1-&quot;9这9个寄存器中。<br>
-最新删除的内容，会在&quot;1中，其他顺延。<br>
-例如：<br>
-删除当前行(yy)<br>
-删除当前行(yy)<br>
-想复制第一次删除的行，&quot;2p</p>
-<h3 id="命名寄存器(&quot;a-&quot;z)"><a class="header-anchor" href="#命名寄存器(&quot;a-&quot;z)" aria-hidden="true">¶</a> 命名寄存器(&quot;a-&quot;z)</h3>
-<p>可以将重要内容放到命名寄存器&quot;a-&quot;z中，一共26个。<br>
-例如：<br>
-把当前行放入寄存器&quot;j里，&quot;jyy<br>
-复制寄存器&quot;j的内容， &quot;jp</p>
-<h3 id="黑洞寄存器(&quot;_d)"><a class="header-anchor" href="#黑洞寄存器(&quot;_d)" aria-hidden="true">¶</a> 黑洞寄存器(&quot;_d)</h3>
-<p>放到这个寄存器的内容，将不会放到任何其他寄存器中，相当于彻底删除内容。<br>
-例如：<br>
-彻底删除当前行，不放入任何寄存器，&quot;_dd</p>
-<h3 id="系统剪贴板(&quot;+)"><a class="header-anchor" href="#系统剪贴板(&quot;+)" aria-hidden="true">¶</a> 系统剪贴板(&quot;+)</h3>
-<p>通过&quot;+寄存器可以把内容复制到系统剪贴板，也可以从系统剪贴板粘贴内容但Vim中。<br>
-例如：<br>
-复制当前行到系统剪贴板中，&quot;+yy<br>
-复制系统剪贴板到vim中，&quot;+p</p>
+        <p>简易实现</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Function</span>.prototype.bind = <span class="function"><span class="keyword">function</span>(<span class="params">context</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> args = <span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>, <span class="number">1</span>),</span><br><span class="line">  self = <span class="keyword">this</span>;</span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">      <span class="keyword">var</span> innerArgs = <span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>);</span><br><span class="line">      <span class="keyword">var</span> finalArgs = args.concat(innerArgs);</span><br><span class="line">      <span class="keyword">return</span> self.apply(context,finalArgs);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>可作为构造函数的实现</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Function</span>.prototype.bind = <span class="function"><span class="keyword">function</span>(<span class="params">context</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> args = <span class="built_in">Array</span>.prototype.slice(<span class="built_in">arguments</span>, <span class="number">1</span>),</span><br><span class="line">  F = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;,</span><br><span class="line">  self = <span class="keyword">this</span>,</span><br><span class="line">  bound = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">      <span class="keyword">var</span> innerArgs = <span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>);</span><br><span class="line">      <span class="keyword">var</span> finalArgs = args.concat(innerArgs);</span><br><span class="line">      <span class="keyword">return</span> self.apply((<span class="keyword">this</span> <span class="keyword">instanceof</span> F ? <span class="keyword">this</span> : context), finalArgs);</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  F.prototype = self.prototype;</span><br><span class="line">  bound.prototype = <span class="keyword">new</span> F();</span><br><span class="line">  <span class="keyword">return</span> bound;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>浏览器支持</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Function</span>.prototype.bind = <span class="function"><span class="keyword">function</span> (<span class="params">oThis</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span> <span class="keyword">this</span> !== <span class="string">"function"</span>) &#123;</span><br><span class="line">      <span class="keyword">throw</span> <span class="keyword">new</span> <span class="built_in">TypeError</span>(<span class="string">"Function.prototype.bind - what is trying to be bound is not callable"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> aArgs = <span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>, <span class="number">1</span>), </span><br><span class="line">        fToBind = <span class="keyword">this</span>, </span><br><span class="line">        fNOP = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;&#125;,</span><br><span class="line">        fBound = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">          <span class="keyword">return</span> fToBind.apply(</span><br><span class="line">              <span class="keyword">this</span> <span class="keyword">instanceof</span> fNOP &amp;&amp; oThis ? <span class="keyword">this</span> : oThis || <span class="built_in">window</span>,</span><br><span class="line">              aArgs.concat(<span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>))</span><br><span class="line">          );</span><br><span class="line">        &#125;;</span><br><span class="line"></span><br><span class="line">    fNOP.prototype = <span class="keyword">this</span>.prototype;</span><br><span class="line">    fBound.prototype = <span class="keyword">new</span> fNOP();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> fBound;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css">
       
     </div>
@@ -444,7 +403,9 @@
       
         <div class="post-tags">
           
-            <a href="/blog/tags/vim/" rel="tag"># vim</a>
+            <a href="/blog/tags/js/" rel="tag"># js</a>
+          
+            <a href="/blog/tags/前端/" rel="tag"># 前端</a>
           
         </div>
       
@@ -457,8 +418,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/blog/2018/06/11/html/文字折行问题/" rel="next" title="关于文字折行">
-                <i class="fa fa-chevron-left"></i> 关于文字折行
+              <a href="/blog/2019/03/07/js/promise/" rel="next" title="原生实现promise">
+                <i class="fa fa-chevron-left"></i> 原生实现promise
               </a>
             
           </div>
@@ -466,10 +427,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/blog/2018/06/12/vim代码折叠/" rel="prev" title="vim代码折叠">
-                vim代码折叠 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -523,17 +480,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -621,22 +569,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#复制粘贴和寄存器"><span class="nav-number">1.</span> <span class="nav-text">¶ 复制粘贴和寄存器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#无名寄存器("")"><span class="nav-number">1.0.1.</span> <span class="nav-text">¶ 无名寄存器(&quot;&quot;)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#复制专用寄存器("0)"><span class="nav-number">1.0.2.</span> <span class="nav-text">¶ 复制专用寄存器(&quot;0)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除专用寄存器("1-"9)"><span class="nav-number">1.0.3.</span> <span class="nav-text">¶ 删除专用寄存器(&quot;1-&quot;9)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#命名寄存器("a-"z)"><span class="nav-number">1.0.4.</span> <span class="nav-text">¶ 命名寄存器(&quot;a-&quot;z)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#黑洞寄存器("_d)"><span class="nav-number">1.0.5.</span> <span class="nav-text">¶ 黑洞寄存器(&quot;_d)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#系统剪贴板("+)"><span class="nav-number">1.0.6.</span> <span class="nav-text">¶ 系统剪贴板(&quot;+)</span></a></li></ol></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
